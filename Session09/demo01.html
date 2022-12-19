@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo01 - Nhúng javascript vào HTML</title>
+    <!-- Cách 3: Nhúng external - Viết file.js và nhúng vào html -->
+    <script src="demo01.js"></script>
+  </head>
+  <body>
+    <!-- Cách 1: Nhúng inline -->
+    <button onclick="alert('Rikkei Academy xin chào các bạn')">
+      Click here 1
+    </button>
+    <!-- Cách 2: Nhúng internal - ở trong thẻ script -->
+    <button onclick="btn2Click()">Click here 2</button>
+    <script>
+      function btn2Click() {
+        alert("Chúc các bạn học tốt tại Rikkei Academy");
+      }
+    </script>
+    <button onclick="btn3Click()">Click here 3</button>
+  </body>
+</html>

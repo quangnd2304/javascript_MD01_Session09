@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phân biệt var,let,const - 2</title>
+  </head>
+  <body>
+    <script>
+      //let: khai báo biến trong khối lệnh, không thể khai báo lại, có thể gán giá trị lại
+      function printValueOfVariable() {
+        let numberOne = 10;
+        numberOne = 20; //Gán lại giá trị
+        // let numberOne = 30;//Không thể khai báo lại
+        console.log("Number One in block:", numberOne);
+      }
+      printValueOfVariable();
+      console.log("Number One:", numberOne);
+    </script>
+  </body>
+</html>

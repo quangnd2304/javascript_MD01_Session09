@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phân biệt var,let,const - 1</title>
+  </head>
+  <body>
+    <script>
+      // var: khai báo biến toàn cục và cục bộ, khai báo lại, gán lại giá trị
+      var numberOne = 10; //Toàn cục
+      function printValueOfVariable() {
+        var numberTwo = 11; //Cục bộ
+        var numberOne = 20; //Khai báo lại
+        numberTwo = 15; //Gán giá trị lại
+        console.log("Number One in function: ", numberOne);
+        console.log("Number Two in function: ", numberTwo);
+      }
+      printValueOfVariable();
+      //hoisting
+      var numberThree;
+      console.log("Number Three:", numberThree);
+      //   var numberThree = 30;
+      numberThree = 30;
+      console.log("Number One: ", numberOne);
+      console.log("Number Two: ", numberTwo);
+    </script>
+  </body>
+</html>
